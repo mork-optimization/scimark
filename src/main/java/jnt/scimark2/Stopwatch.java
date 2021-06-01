@@ -4,14 +4,9 @@ package jnt.scimark2;
 
 	Provides a stopwatch to measure elapsed time.
 
-<P>
-<DL>
-<DT><B>Example of use:</B></DT>
-<DD>
-<p>
+Example of use:
 <pre>
 	Stopwatch Q = new Stopwatch;
-<p>
 	Q.start();
 	//
 	// code to be timed here ...

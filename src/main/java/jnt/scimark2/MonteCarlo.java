@@ -5,27 +5,27 @@ package jnt.scimark2;
 
  How: generate N random numbers in the unit square, (0,0) to (1,1)
  and see how are within a radius of 1 or less, i.e.
- <pre>  
+ <pre>{@code
 
  sqrt(x^2 + y^2) < r
 
- </pre>
+}</pre>
   since the radius is 1.0, we can square both sides
   and avoid a sqrt() computation:
-  <pre>
+  <pre>{@code
 
     x^2 + y^2 <= 1.0
 
-  </pre>
+}</pre>
   this area under the curve is (Pi * r^2)/ 4.0,
   and the area of the unit of square is 1.0,
   so Pi can be approximated by 
-  <pre>
+  <pre>{@code
 		        # points with x^2+y^2 < 1
      Pi =~ 		--------------------------  * 4.0
 		             total # points
 
-  </pre>
+}</pre>
 
 */
 

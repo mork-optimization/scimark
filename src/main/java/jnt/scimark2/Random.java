@@ -52,11 +52,11 @@ public class Random {
    given half-open interval [left,right) with a seed based on the system
    clock.
 
-@param <B>left</B> (double)<BR>
+@param left (double)
 
        The left endpoint of the half-open interval [left,right).
 
-@param <B>right</B> (double)<BR>
+@param right (double)
 
        The right endpoint of the half-open interval [left,right).
 */
@@ -72,7 +72,7 @@ public class Random {
    Initializes a sequence of uniformly distributed quasi random numbers with a
    given seed.
 
-@param <B>seed</B> (int)<BR>
+@param seed (int)
 
        The seed of the random number generator.  Two sequences with the same
        seed will be identical.
@@ -85,16 +85,16 @@ public class Random {
    Initializes a sequence of uniformly distributed quasi random numbers
    with a given seed on a given half-open interval [left,right).
 
-@param <B>seed</B> (int)<BR>
+@param seed
 
        The seed of the random number generator.  Two sequences with the same
        seed will be identical.
 
-@param <B>left</B> (double)<BR>
+@param left (double)
 
        The left endpoint of the half-open interval [left,right).
 
-@param <B>right</B> (double)<BR>
+@param right (double)
 
        The right endpoint of the half-open interval [left,right).
 */

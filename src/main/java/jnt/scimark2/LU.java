@@ -156,7 +156,7 @@ public class LU
     @param A (in/out) On input, the matrix to be factored.
         On output, the compact LU factorization.
 
-    @param pivit (out) The pivot vector records the
+    @param pivot (out) The pivot vector records the
         reordering of the rows of A during factorization.
         
     @return 0, if OK, nozero value, othewise.
@@ -248,7 +248,7 @@ public static int factor(double A[][],  int pivot[])
 
 
         @param LU (in) the factored matrix in LU form. 
-        @param pivot (in) the pivot vector which lists
+        @param pvt (in) the pivot vector which lists
             the reordering used during the factorization
             stage.
         @param b    (in/out) On input, the right-hand side.

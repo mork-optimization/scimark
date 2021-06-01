@@ -4,7 +4,7 @@
 package jnt.Bench;
 
 /**
- An EXTREMELY Lame & Minimal Number formatter.
+ An EXTREMELY Lame and Minimal Number formatter.
  Only what is essential for the Benchmarker...
  I'll evolve it if necessary.
 

@@ -4,9 +4,7 @@ jnt.Bench.Stopwatch
 package jnt.Bench;
 /**
    Provides a stopwatch to measure elapsed time.
-<DL>
-<DT><B>Example of use:</B></DT>
-<DD>
+Example of use:
 <pre>
 	Stopwatch Q = new Stopwatch;
 	Q.start();
