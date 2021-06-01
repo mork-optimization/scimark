@@ -34,10 +34,10 @@ This should compile main benchmark driver and dependent files.
 
 From the directory above this one, issue the command:
 
-    >java jnt.scimark2.commandline
+    >java jnt.scimark2.CommandLine
 
 or
-    >java jnt.scimark2.commandline -large
+    >java jnt.scimark2.CommandLine -large
 
 to run the large problem size version. (Note that this one
 takes considerably longer to run.)
@@ -45,7 +45,7 @@ takes considerably longer to run.)
 After a few minutes, the program should respond with
 the benchmark results, e.g.
 
-    >javac jnt.scimark2.commandline
+    >javac jnt.scimark2.CommandLine
 
 	SciMark 2.0a
 
