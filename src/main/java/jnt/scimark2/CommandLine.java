@@ -6,16 +6,11 @@ package jnt.scimark2;
  * sparse matrix computations, Jacobi SOR, and dense LU matrix
  * factorizations.
  */
-
-
 public class CommandLine {
 
   /* Benchmark 5 kernels with individual Mflops.
 	 "results[0]" has the average Mflop rate.
-
   */
-
-
     public static void main(String[] args) {
         // default to the (small) cache-contained version
 
@@ -104,8 +99,5 @@ public class CommandLine {
                 System.getProperty("os.name"));
         System.out.println("os.version: " +
                 System.getProperty("os.version"));
-
-
     }
-
 }
