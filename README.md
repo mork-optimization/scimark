@@ -64,4 +64,10 @@ Process finished with exit code 0
 
 ### As a library
 
-TODO
+```java
+var benchmarkResult = ScimarkAPI.runBenchmark(); // Optionally set a seed, large run, or custom config
+double score = benchmarkResult.getScore();
+```
+
+The benchmark may fail under rare circunstances, throwing `BenchmarkException` and a message explaining why.
+
