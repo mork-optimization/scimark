@@ -64,6 +64,16 @@ Process finished with exit code 0
 
 ### As a library
 
+Available at maven central:
+```xml
+<dependency>
+    <groupId>es.urjc.etsii.grafo</groupId>
+    <artifactId>scimark</artifactId>
+    <version>2.1.0</version>
+</dependency>
+```
+
+Example usage:
 ```java
 var benchmarkResult = ScimarkAPI.runBenchmark(); // Optionally set a seed, large run, or custom config
 double score = benchmarkResult.getScore();
