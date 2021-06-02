@@ -21,7 +21,7 @@ https://math.nist.gov/scimark2/credits.html
 
 ## Usage
 
-### Independently
+### Standalone
 
 Download latest release or compile from source using Maven:
 
