@@ -21,21 +21,30 @@ https://math.nist.gov/scimark2/credits.html
 
 ## Usage
 
-### Standalone
+Requires Java 11 to execute, and Maven for compiling from sources.
 
-Download latest release or compile from source using Maven:
+### Get it
 
-    mvn clean package
+Download latest release from the following link
+https://github.com/rmartinsanta/scimark/releases/
+
+or compile from source (requires maven):
+```bash
+git clone https://github.com/rmartinsanta/scimark
+cd scimark
+mvn clean package
+```
+
+Executable will be at `target/scimark-version.jar`.
+
+### Executing standalone
 
 Execute standard benchmark using:
 
     java -jar scimark.jar
 
-or if compiled locally
-    
-    java -jar target/scimark-2.0.1.jar
 
-execute large benchmark using `-large` switch:
+or large benchmark using `-large` switch:
 
     java -jar scimark.jar -large
 
@@ -62,9 +71,14 @@ Process finished with exit code 0
 
 ```
 
+Standard benchmark uses small datasets that should be small enough to fit in CPU caches.
+Large benchmark should not fit in cache so CPU-RAM performance is also measured in the benchmark.
+
 ### As a library
 
-Available at maven central:
+Available at maven central: https://search.maven.org/artifact/es.urjc.etsii.grafo/scimark/2.1.1/jar
+
+Example for Maven project
 ```xml
 <dependency>
     <groupId>es.urjc.etsii.grafo</groupId>
