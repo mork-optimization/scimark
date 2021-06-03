@@ -1,8 +1,8 @@
-# SciMark 2.0: Java Numerical Benchmark
+# SciMark 2: Java Numerical Benchmark
 
 ## What
 
-SciMark 2.0 is a composite Java benchmark measuring the  performance of
+SciMark 2 is a composite Java benchmark measuring the  performance of
 numerical kernels occurring in scientific and engineering applications.  
 It consists of five kernels which typify computational routines
 commonly found in numeric codes: Fast Fourier Transforms (FFTs),
@@ -35,7 +35,7 @@ or if compiled locally
     
     java -jar target/scimark-2.0.1.jar
 
-or large benchmark using `-large` switch:
+execute large benchmark using `-large` switch:
 
     java -jar scimark.jar -large
 
@@ -69,7 +69,7 @@ Available at maven central:
 <dependency>
     <groupId>es.urjc.etsii.grafo</groupId>
     <artifactId>scimark</artifactId>
-    <version>2.1.0</version>
+    <version>2.1.1</version>
 </dependency>
 ```
 
