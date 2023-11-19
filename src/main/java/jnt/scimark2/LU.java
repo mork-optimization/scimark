@@ -46,7 +46,7 @@ public class LU {
      */
 
 
-    public static final double num_flops(int N) {
+    public static double num_flops(int N) {
         // rougly 2/3*N^3
 
         double Nd = N;
@@ -86,7 +86,7 @@ public class LU {
         return T;
     }
 
-    protected static final void insert_copy(double[][] B, double[][] A) {
+    protected static void insert_copy(double[][] B, double[][] A) {
         int M = A.length;
         int N = A[0].length;
 

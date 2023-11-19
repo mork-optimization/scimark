@@ -30,7 +30,7 @@ public class Stopwatch {
     /**
      * Return system time (in seconds)
      */
-    public final static double seconds() {
+    public static double seconds() {
         return (System.currentTimeMillis() * 0.001);
     }
 
