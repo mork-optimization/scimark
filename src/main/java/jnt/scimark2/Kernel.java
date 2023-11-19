@@ -38,7 +38,7 @@ public class Kernel {
         double[][] G = RandomMatrix(N, N, R);
 
         Stopwatch Q = new Stopwatch();
-        int cycles = 1;
+        long cycles = 1;
         while (true) {
             Q.start();
             SOR.execute(1.25, G, cycles);
@@ -54,7 +54,7 @@ public class Kernel {
     public static double measureMonteCarlo(double min_time, Random R) {
         Stopwatch Q = new Stopwatch();
 
-        int cycles = 1;
+        long cycles = 1;
         while (true) {
             Q.start();
             MonteCarlo.integrate(cycles);
@@ -122,7 +122,7 @@ public class Kernel {
 
         Stopwatch Q = new Stopwatch();
 
-        int cycles = 1;
+        long cycles = 1;
         while (true) {
             Q.start();
             SparseCompRow.matmult(y, val, row, col, x, cycles);
@@ -145,7 +145,7 @@ public class Kernel {
 
         Stopwatch Q = new Stopwatch();
 
-        int cycles = 1;
+        long cycles = 1;
         while (true) {
             Q.start();
             for (int i = 0; i < cycles; i++) {
