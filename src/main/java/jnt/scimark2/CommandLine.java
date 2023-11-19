@@ -7,10 +7,14 @@ package jnt.scimark2;
  * factorizations.
  */
 public class CommandLine {
+    private static final String[] DUMP_PROPERTIES = new String[]{
+            "java.vendor",
+            "java.version",
+            "os.arch",
+            "os.name",
+            "os.version"
+    };
 
-  /* Benchmark 5 kernels with individual Mflops.
-	 "results[0]" has the average Mflop rate.
-  */
     public static void main(String[] args) {
         // default to the (small) cache-contained version
 
@@ -68,36 +72,19 @@ public class CommandLine {
         res[0] = (res[1] + res[2] + res[3] + res[4] + res[5]) / 5;
 
 
-        // print out results
-        System.out.println("Composite Score: " + res[0]);
-        System.out.print("FFT (" + FFT_size + "): ");
-        if (res[1] == 0.0)
-            System.out.println(" ERROR, INVALID NUMERICAL RESULT!");
-        else
-            System.out.println(res[1]);
 
-        System.out.println("SOR (" + SOR_size + "x" + SOR_size + "): "
-                + "  " + res[2]);
-        System.out.println("Monte Carlo : " + res[3]);
-        System.out.println("Sparse matmult (N=" + Sparse_size_M +
-                ", nz=" + Sparse_size_nz + "): " + res[4]);
-        System.out.print("LU (" + LU_size + "x" + LU_size + "): ");
-        if (res[5] == 0.0)
-            System.out.println(" ERROR, INVALID NUMERICAL RESULT!");
-        else
-            System.out.println(res[5]);
+        // print out results
+        System.out.format("Composite Score: %.2f%n", res[0]);
+        System.out.format("FFT (%s): %.2f%n", FFT_size, res[1]);
+        System.out.format("SOR (%s x %s): %.2f%n", SOR_size, SOR_size, res[2]);
+        System.out.format("Monte Carlo: %.2f%n", res[3]);
+        System.out.format("Sparse matmult (N=%s, nz=%s): %.2f%n", Sparse_size_M, Sparse_size_nz, res[4]);
+        System.out.format("LU (%s x %s ): %.2f%n", LU_size, LU_size, res[5]);
 
         // print out System info
         System.out.println();
-        System.out.println("java.vendor: " +
-                System.getProperty("java.vendor"));
-        System.out.println("java.version: " +
-                System.getProperty("java.version"));
-        System.out.println("os.arch: " +
-                System.getProperty("os.arch"));
-        System.out.println("os.name: " +
-                System.getProperty("os.name"));
-        System.out.println("os.version: " +
-                System.getProperty("os.version"));
+        for(var property: DUMP_PROPERTIES){
+            System.out.println(property + ": " + System.getProperty(property));
+        }
     }
 }

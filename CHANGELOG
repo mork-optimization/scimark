@@ -1,0 +1,8 @@
+# 2.2
+- Print banner before running benchmark
+- Format numbers if running standalone
+- Use long instead of int for counting iterations
+
+# 2.1
+- Add a simple API to allow using Scimark as a library
+- Maven release
