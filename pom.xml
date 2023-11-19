@@ -20,7 +20,7 @@
 
     <name>SciMark</name>
     <description>SciMark 2 is a Java benchmark for scientific and numerical computing. It measures several computational kernels and reports a composite score in approximate Mflops (Millions of floating point operations per second). </description>
-    <url>https://github.com/rmartinsanta/scimark</url>
+    <url>https://github.com/mork-optimization/scimark</url>
 
     <licenses>
         <license>
@@ -39,9 +39,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/rmartinsanta/scimark.git</connection>
-        <developerConnection>scm:git:ssh://github.com:rmartinsanta/scimark.git</developerConnection>
-        <url>https://github.com/rmartinsanta/scimark/tree/main</url>
+        <connection>scm:git:git://github.com/mork-optimization/scimark.git</connection>
+        <developerConnection>scm:git:ssh://github.com:mork-optimization/scimark.git</developerConnection>
+        <url>https://github.com/mork-optimization/scimark/tree/main</url>
     </scm>
 
     <distributionManagement>
