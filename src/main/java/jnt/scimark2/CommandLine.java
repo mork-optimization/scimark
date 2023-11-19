@@ -14,6 +14,10 @@ public class CommandLine {
     public static void main(String[] args) {
         // default to the (small) cache-contained version
 
+        System.out.println();
+        System.out.println("SciMark " + CommandLine.class.getPackage().getImplementationVersion());
+        System.out.println();
+
         double min_time = Constants.RESOLUTION_DEFAULT;
 
         int FFT_size = Constants.FFT_SIZE;
@@ -65,10 +69,6 @@ public class CommandLine {
 
 
         // print out results
-
-        System.out.println();
-        System.out.println("SciMark 2.0a");
-        System.out.println();
         System.out.println("Composite Score: " + res[0]);
         System.out.print("FFT (" + FFT_size + "): ");
         if (res[1] == 0.0)
