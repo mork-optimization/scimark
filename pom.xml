@@ -40,7 +40,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/mork-optimization/scimark.git</connection>
-        <developerConnection>scm:git:ssh://github.com:mork-optimization/scimark.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/mork-optimization/scimark.git</developerConnection>
         <url>https://github.com/mork-optimization/scimark/tree/main</url>
     </scm>
 
