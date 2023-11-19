@@ -44,7 +44,7 @@ public class CommandLine {
             }
 
             if (args.length > current_arg)
-                min_time = Double.valueOf(args[current_arg]).doubleValue();
+                min_time = Double.parseDouble(args[current_arg]);
         }
 
 

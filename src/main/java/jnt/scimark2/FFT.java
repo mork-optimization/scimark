@@ -17,10 +17,9 @@ package jnt.scimark2;
 public class FFT {
 
     public static double num_flops(int N) {
-        double Nd = N;
         double logN = log2(N);
 
-        return (5.0 * Nd - 2) * logN + 2 * (Nd + 1);
+        return (5.0 * (double) N - 2) * logN + 2 * ((double) N + 1);
     }
 
 

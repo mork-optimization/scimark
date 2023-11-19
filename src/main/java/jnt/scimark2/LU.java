@@ -49,9 +49,7 @@ public class LU {
     public static double num_flops(int N) {
         // rougly 2/3*N^3
 
-        double Nd = N;
-
-        return (2.0 * Nd * Nd * Nd / 3.0);
+        return (2.0 * (double) N * (double) N * (double) N / 3.0);
     }
 
     protected static double[] new_copy(double[] x) {

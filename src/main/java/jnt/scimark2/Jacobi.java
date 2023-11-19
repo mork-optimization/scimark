@@ -2,11 +2,7 @@ package jnt.scimark2;
 
 public class Jacobi {
     public static double num_flops(int M, int N, int num_iterations) {
-        double Md = M;
-        double Nd = N;
-        double num_iterD = num_iterations;
-
-        return (Md - 1) * (Nd - 1) * num_iterD * 6.0;
+        return ((double) M - 1) * ((double) N - 1) * (double) num_iterations * 6.0;
     }
 
     public static void SOR(double omega, double[][] G, int num_iterations) {

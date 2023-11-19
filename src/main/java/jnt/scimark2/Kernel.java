@@ -185,13 +185,6 @@ public class Kernel {
         return y;
     }
 
-    private static void CopyVector(double[] B, double[] A) {
-        int N = A.length;
-
-        System.arraycopy(A, 0, B, 0, N);
-    }
-
-
     private static double normabs(double[] x, double[] y) {
         int N = x.length;
         double sum = 0.0;

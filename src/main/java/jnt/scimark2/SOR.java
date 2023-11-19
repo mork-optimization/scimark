@@ -2,11 +2,7 @@ package jnt.scimark2;
 
 public class SOR {
     public static double num_flops(int M, int N, long num_iterations) {
-        double Md = M;
-        double Nd = N;
-        double num_iterD = num_iterations;
-
-        return (Md - 1) * (Nd - 1) * num_iterD * 6.0;
+        return ((double) M - 1) * ((double) N - 1) * (double) num_iterations * 6.0;
     }
 
     public static void execute(double omega, double[][] G, long
