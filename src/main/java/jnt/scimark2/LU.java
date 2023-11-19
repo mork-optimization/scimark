@@ -57,8 +57,7 @@ public class LU {
     protected static double[] new_copy(double[] x) {
         int N = x.length;
         double[] T = new double[N];
-        for (int i = 0; i < N; i++)
-            T[i] = x[i];
+        System.arraycopy(x, 0, T, 0, N);
         return T;
     }
 
@@ -71,8 +70,7 @@ public class LU {
         for (int i = 0; i < M; i++) {
             double[] Ti = T[i];
             double[] Ai = A[i];
-            for (int j = 0; j < N; j++)
-                Ti[j] = Ai[j];
+            System.arraycopy(Ai, 0, Ti, 0, N);
         }
 
         return T;
@@ -81,8 +79,7 @@ public class LU {
     public static int[] new_copy(int[] x) {
         int N = x.length;
         int[] T = new int[N];
-        for (int i = 0; i < N; i++)
-            T[i] = x[i];
+        System.arraycopy(x, 0, T, 0, N);
         return T;
     }
 
@@ -95,8 +92,7 @@ public class LU {
         for (int i = 0; i < M; i++) {
             double[] Bi = B[i];
             double[] Ai = A[i];
-            for (int j = 0; j < remainder; j++)
-                Bi[j] = Ai[j];
+            System.arraycopy(Ai, 0, Bi, 0, remainder);
             for (int j = remainder; j < N; j += 4) {
                 Bi[j] = Ai[j];
                 Bi[j + 1] = Ai[j + 1];

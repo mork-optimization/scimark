@@ -180,8 +180,7 @@ public class Kernel {
         int N = x.length;
 
         double[] y = new double[N];
-        for (int i = 0; i < N; i++)
-            y[i] = x[i];
+        System.arraycopy(x, 0, y, 0, N);
 
         return y;
     }
@@ -189,8 +188,7 @@ public class Kernel {
     private static void CopyVector(double[] B, double[] A) {
         int N = A.length;
 
-        for (int i = 0; i < N; i++)
-            B[i] = A[i];
+        System.arraycopy(A, 0, B, 0, N);
     }
 
 
@@ -213,8 +211,7 @@ public class Kernel {
         for (int i = 0; i < M; i++) {
             double[] Bi = B[i];
             double[] Ai = A[i];
-            for (int j = 0; j < remainder; j++)
-                Bi[j] = Ai[j];
+            System.arraycopy(Ai, 0, Bi, 0, remainder);
             for (int j = remainder; j < N; j += 4) {
                 Bi[j] = Ai[j];
                 Bi[j + 1] = Ai[j + 1];
