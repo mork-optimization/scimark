@@ -76,14 +76,14 @@ Large benchmark should not fit in cache so CPU-RAM performance is also measured 
 
 ### As a library
 
-Available at maven central: https://search.maven.org/artifact/es.urjc.etsii.grafo/scimark/2.1.1/jar
+Available at maven central: https://search.maven.org/artifact/es.urjc.etsii.grafo/scimark/
 
 Example for Maven project
 ```xml
 <dependency>
     <groupId>es.urjc.etsii.grafo</groupId>
     <artifactId>scimark</artifactId>
-    <version>2.1.1</version>
+    <version>2.2</version>
 </dependency>
 ```
 
